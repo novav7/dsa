@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            margin: 40px;
+        }
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 700px;
+            max-width: calc(100% - 50px);
+            margin: auto;
+        }
+        h1 { color: #222; }
+        .back-btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .back-btn:hover { background: #0056b3; }
+        .code-box { margin-top: 10px; }
+        textarea {
+            width: 100%;
+            min-height: 230px;
+            box-sizing: border-box;
+            font-family: Consolas, monospace;
+            font-size: 15px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+            white-space: pre;
+        }
+        button {
+            margin-top: 8px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 9px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+<pre>
+
+# Practical No.: 5
+
+Aim: Variables, Control Statements, and Loops using Shell Scripting
+
+Theory: Dynamic scripting requires storing configuration variables, evaluating conditions (`if-else`) and using iteration mechanisms (`for`, `while`) to handle repetitive tasks.
+
+Requirements:
+
+- Linux
+- WSL Terminal
+
+a] Declare and use variable in shell script
+
+Accept user input using `read`.
+
+```
+nano name.sh
+```
+
+```
+#!/bin/bash
+echo "What is your name?"
+read user_name
+echo "Hello: $user_name, Nice to meet you!"
+```
+
+b] Use condition statement (if-else)
+
+```
+nano if_else.sh
+```
+
+```
+#!/bin/bash
+echo "Enter a number:"
+read num
+
+if [ $num -gt 0 ]
+then
+    echo "positive number"
+else
+    echo "Zero or negative number"
+fi
+```
+
+```
+chmod +x if_else.sh
+./if_else.sh
+```
+
+c] Implement simple loop (for or while)
+
+For Loop:
+
+```
+nano for_loop.sh
+```
+
+```
+#!/bin/bash
+for i in 1 2 3 4 5
+do
+    echo "Number: $i"
+done
+```
+
+```
+chmod +x for_loop.sh
+./for_loop.sh
+```
+
+While Loop:
+
+```
+nano while_loop.sh
+```
+
+```
+#!/bin/bash
+count=1
+
+while [ $count -le 5 ]
+do
+    echo $count
+    count=$((count + 1))
+done
+```
+
+```
+chmod +x while_loop.sh
+./while_loop.sh
+```
+</pre>
+  <a href="index.html" class="back-btn">⬅ Back to Home</a>
+
+</body>
+</html>

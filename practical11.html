@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            margin: 40px;
+        }
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 700px;
+            max-width: calc(100% - 50px);
+            margin: auto;
+        }
+        h1 { color: #222; }
+        .back-btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .back-btn:hover { background: #0056b3; }
+        .code-box { margin-top: 10px; }
+        textarea {
+            width: 100%;
+            min-height: 230px;
+            box-sizing: border-box;
+            font-family: Consolas, monospace;
+            font-size: 15px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+            white-space: pre;
+        }
+        button {
+            margin-top: 8px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 9px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+<pre>
+
+# Module – 2: Practical No. 1
+
+Process Management Basics
+
+Understand process creation and monitoring.
+
+Theory:
+
+A process is an active instance of a running program in Linux. Every process is tracked by the kernel via a unique integer called the Process ID (PID).
+
+Process management allows users to view running applications and terminate frozen or unwanted tasks safely.
+
+Requirements:
+
+- Linux
+- WSL Terminal
+
+a] View running processes using `ps` and `top`
+
+`$ ps aux` – Takes a static snapshot of all active processes on the system.
+
+`$ top` – Launches an interactive, real-time interface displaying resource usage dynamically.
+
+b] Identify Process ID (PID)
+
+`$ pgrep firefox`
+
+`$ ps aux | grep firefox` – Used to extract the unique PID of a running process needed to perform signals or threading.
+
+c] Kill a process using `kill` command
+
+`$ kill 1234` – Standard kill politely asks the process to exit, saving data.
+
+d] Use `htop` for interactive process monitoring
+
+`$ htop` – An interactive text-based visual sort, search and kill process cleanly using shortcut keys.
+</pre>
+  <a href="index.html" class="back-btn">⬅ Back to Home</a>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practical Page</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f5f5f5;
+            margin: 40px;
+        }
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 700px;
+            max-width: calc(100% - 50px);
+            margin: auto;
+        }
+        h1 { color: #222; }
+        .back-btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .back-btn:hover { background: #0056b3; }
+        .code-box { margin-top: 10px; }
+        textarea {
+            width: 100%;
+            min-height: 230px;
+            box-sizing: border-box;
+            font-family: Consolas, monospace;
+            font-size: 15px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+            white-space: pre;
+        }
+        button {
+            margin-top: 8px;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 9px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+<pre>
+
+Practical No.: 7
+
+Aim: Text Editing using Vi Editor: Create and edit files using Vi editor.
+
+Requirement: WSL
+
+a] Open and create file using `vi`
+
+1] `vi myfile.txt` – Opens an existing file for editing. If the file does not exist, it creates a new file.
+
+b] Work in Insert Mode and Command Mode
+
+1] `i` – Enters Insert mode to type or edit text.
+
+2] `Esc` – Exits Insert mode and returns to Command mode.
+
+3] `h/j/k/l` – Moves the cursor left, down, up, and right respectively.
+
+c] Save & exit file (`:w`, `:q`, `:wq`)
+
+1] `:w` – Saves the file.
+
+2] `:q` – Quits the Vi editor.
+
+3] `:wq` – Saves the file and quits the Vi editor.
+
+d] Edit & delete text using basic Vi commands
+
+1] `x` – Deletes the character under the cursor.
+
+2] `dw` – Deletes a word from the cursor position.
+
+3] `dd` – Deletes the current line.
+
+4] `u` – Undoes the last change.
+
+5] `yy` – Copies the current line.
+
+6] `p` – Pastes the copied text.
+
+7] `:/linux` – Searches for the word "linux" in the file.
+</pre>
+  <a href="index.html" class="back-btn">⬅ Back to Home</a>
+
+</body>
+</html>
